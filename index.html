@@ -19,19 +19,21 @@
 body{
 
     font-family:"Segoe UI",Arial,sans-serif;
-    background:#edf2f7;
+    background:#eef3f8;
     color:#333;
 
 }
 
 .container{
 
-    max-width:1200px;
-    margin:40px auto;
+    width:92%;
+    max-width:1350px;
 
-    background:white;
+    margin:35px auto;
 
-    border-radius:15px;
+    background:#fff;
+
+    border-radius:16px;
 
     box-shadow:0 15px 35px rgba(0,0,0,.12);
 
@@ -43,13 +45,13 @@ body{
 
     display:grid;
 
-    grid-template-columns:290px 1fr;
+    grid-template-columns:310px auto;
 
-    gap:45px;
+    gap:55px;
 
-    padding:45px;
+    padding:50px;
 
-    align-items:start;
+    align-items:center;
 
 }
 
@@ -61,39 +63,41 @@ body{
 
 .profile img{
 
-    width:260px;
+    width:270px;
 
-    height:320px;
+    height:340px;
 
     object-fit:cover;
 
-    object-position:center 15%;
+    object-position:center 8%;
 
-    border-radius:12px;
+    border-radius:14px;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.20);
+    box-shadow:0 12px 28px rgba(0,0,0,.18);
 
 }
 
 .info h1{
 
+    font-size:58px;
+
     color:#0A66C2;
 
-    font-size:48px;
+    margin-bottom:12px;
 
-    margin-bottom:10px;
+    line-height:1.1;
 
 }
 
 .role{
 
-    font-size:24px;
+    font-size:25px;
 
     font-weight:600;
 
-    color:#444;
+    color:#333;
 
-    margin-bottom:5px;
+    margin-bottom:8px;
 
 }
 
@@ -103,21 +107,9 @@ body{
 
     color:#666;
 
-    margin-bottom:25px;
+    margin-bottom:28px;
 
-}
-
-.line{
-
-    width:90px;
-
-    height:4px;
-
-    background:#0A66C2;
-
-    margin-bottom:30px;
-
-    border-radius:20px;
+    line-height:1.5;
 
 }
 
@@ -125,7 +117,7 @@ body{
 
     font-size:18px;
 
-    line-height:1.8;
+    line-height:1.85;
 
     color:#444;
 
@@ -133,23 +125,25 @@ body{
 
 .bio p{
 
-    margin-bottom:18px;
+    margin-bottom:20px;
 
 }
 
 .links{
 
-    border-top:1px solid #ddd;
-
     background:#f8fafc;
 
-    padding:25px;
+    border-top:1px solid #ddd;
+
+    padding:22px;
 
     display:flex;
 
     justify-content:center;
 
-    gap:12px;
+    align-items:center;
+
+    gap:14px;
 
     flex-wrap:nowrap;
 
@@ -159,15 +153,19 @@ body{
 
 .links a{
 
-    background:#0A66C2;
-
-    color:white;
-
     text-decoration:none;
 
-    padding:12px 18px;
+    background:#0A66C2;
+
+    color:#fff;
+
+    padding:12px 20px;
 
     border-radius:8px;
+
+    min-width:150px;
+
+    text-align:center;
 
     white-space:nowrap;
 
@@ -175,13 +173,15 @@ body{
 
     font-weight:600;
 
-    transition:.3s;
+    transition:.25s;
+
+    flex-shrink:0;
 
 }
 
 .links a:hover{
 
-    background:#084b96;
+    background:#084B96;
 
 }
 
@@ -189,15 +189,15 @@ footer{
 
     text-align:center;
 
-    padding:20px;
+    padding:18px;
 
     color:#777;
 
-    font-size:14px;
+    font-size:15px;
 
 }
 
-@media(max-width:900px){
+@media(max-width:950px){
 
 .hero{
 
@@ -205,11 +205,7 @@ grid-template-columns:1fr;
 
 text-align:center;
 
-}
-
-.line{
-
-margin:0 auto 30px;
+padding:35px;
 
 }
 
@@ -217,13 +213,13 @@ margin:0 auto 30px;
 
 width:220px;
 
-height:270px;
+height:280px;
 
 }
 
 .info h1{
 
-font-size:38px;
+font-size:42px;
 
 }
 
@@ -243,6 +239,14 @@ font-size:18px;
 
 text-align:left;
 
+font-size:17px;
+
+}
+
+.links{
+
+justify-content:flex-start;
+
 }
 
 }
@@ -259,7 +263,7 @@ text-align:left;
 
 <div class="profile">
 
-<img src="profile.jpg" alt="Durga Prasad Patsa">
+<img src="profile1.jpg" alt="Durga Prasad Patsa">
 
 </div>
 
@@ -283,19 +287,17 @@ Artificial Intelligence • Machine Learning • Enterprise Data Engineering
 
 </div>
 
-<div class="line"></div>
-
 <div class="bio">
 
 <p>
 
-I am an Enterprise Data Architect with more than 20 years of experience designing enterprise-scale data platforms, cloud analytics solutions, and modern data architectures. My expertise includes building data intensive applications and enterprise data governance frameworks.
+I am an Enterprise Data Architect with more than 18 years of experience designing enterprise-scale data platforms, cloud analytics solutions, and modern data architectures. My expertise includes Microsoft Azure, Microsoft Fabric, SQL Server, Azure Data Factory, Databricks, and enterprise data engineering.
 
 </p>
 
 <p>
 
-This website is my professional portfolio and research hub, where I share research publications, technical articles, software projects, presentations, videos, and practical insights into Artificial Intelligence, Machine Learning, Cloud Computing, and Enterprise Data Engineering.
+This website serves as my professional portfolio and research hub, where I share research publications, technical articles, software projects, presentations, videos, and practical insights into Artificial Intelligence, Machine Learning, Cloud Computing, and Enterprise Data Engineering.
 
 </p>
 
@@ -327,13 +329,7 @@ This website is my professional portfolio and research hub, where I share resear
 
 <footer>
 
-<strong>Durga Prasad Patsa</strong><br>
-
-Enterprise Data Architect • Independent Researcher
-
-<br><br>
-
-© 2026 Durga Prasad Patsa. All Rights Reserved.
+© 2026 Durga Prasad Patsa
 
 </footer>
 
