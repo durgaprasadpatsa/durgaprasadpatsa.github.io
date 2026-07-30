@@ -2,338 +2,381 @@
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Durga Prasad Patsa</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-
-    font-family:"Segoe UI",Arial,sans-serif;
-    background:#eef3f8;
-    color:#333;
-
-}
-
-.container{
-
-    width:92%;
-    max-width:1350px;
-
-    margin:35px auto;
-
-    background:#fff;
-
-    border-radius:16px;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
-
-    overflow:hidden;
-
-}
-
-.hero{
-
-    display:grid;
-
-    grid-template-columns:310px auto;
-
-    gap:55px;
-
-    padding:50px;
-
-    align-items:center;
-
-}
-
-.profile{
-
-    text-align:center;
-
-}
-
-.profile img{
-
-    width:270px;
-
-    height:340px;
-
-    object-fit:cover;
-
-    object-position:center 8%;
-
-    border-radius:14px;
-
-    box-shadow:0 12px 28px rgba(0,0,0,.18);
-
-}
-
-.info h1{
-
-    font-size:58px;
-
-    color:#0A66C2;
-
-    margin-bottom:12px;
-
-    line-height:1.1;
-
-}
-
-.role{
-
-    font-size:25px;
-
-    font-weight:600;
-
-    color:#333;
-
-    margin-bottom:8px;
-
-}
-
-.research{
-
-    font-size:20px;
-
-    color:#666;
-
-    margin-bottom:28px;
-
-    line-height:1.5;
-
-}
-
-.bio{
-
-    font-size:18px;
-
-    line-height:1.85;
-
-    color:#444;
-
-}
-
-.bio p{
-
-    margin-bottom:20px;
-
-}
-
-.links{
-
-    background:#f8fafc;
-
-    border-top:1px solid #ddd;
-
-    padding:22px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:14px;
-
-    flex-wrap:nowrap;
-
-    overflow-x:auto;
-
-}
-
-.links a{
-
-    text-decoration:none;
-
-    background:#0A66C2;
-
-    color:#fff;
-
-    padding:12px 20px;
-
-    border-radius:8px;
-
-    min-width:150px;
-
-    text-align:center;
-
-    white-space:nowrap;
-
-    font-size:15px;
-
-    font-weight:600;
-
-    transition:.25s;
-
-    flex-shrink:0;
-
-}
-
-.links a:hover{
-
-    background:#084B96;
-
-}
-
-footer{
-
-    text-align:center;
-
-    padding:18px;
-
-    color:#777;
-
-    font-size:15px;
-
-}
-
-@media(max-width:950px){
-
-.hero{
-
-grid-template-columns:1fr;
-
-text-align:center;
-
-padding:35px;
-
-}
-
-.profile img{
-
-width:220px;
-
-height:280px;
-
-}
-
-.info h1{
-
-font-size:42px;
-
-}
-
-.role{
-
-font-size:22px;
-
-}
-
-.research{
-
-font-size:18px;
-
-}
-
-.bio{
-
-text-align:left;
-
-font-size:17px;
-
-}
-
-.links{
-
-justify-content:flex-start;
-
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Professional portfolio of Durga Prasad Patsa, Enterprise Data Architect and Independent Researcher."
+    >
+
+    <title>Durga Prasad Patsa</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #eef3f8;
+            color: #333333;
+        }
+
+        .container {
+            width: calc(100% - 80px);
+            max-width: 1500px;
+            margin: 38px auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.11);
+            overflow: hidden;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 320px minmax(0, 1fr);
+            gap: 55px;
+            align-items: center;
+            padding: 48px 70px 44px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            height: 380px;
+            margin: 0 auto;
+            object-fit: cover;
+            object-position: center 8%;
+            border-radius: 14px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+        }
+
+        .info {
+            min-width: 0;
+        }
+
+        .info h1 {
+            color: #0a66c2;
+            font-size: clamp(42px, 4vw, 62px);
+            line-height: 1.08;
+            margin-bottom: 16px;
+        }
+
+        .title-panel {
+            max-width: 930px;
+            margin-bottom: 28px;
+            padding: 18px 22px;
+            background: #f1f7fd;
+            border-left: 5px solid #0a66c2;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .role {
+            color: #24364a;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 7px;
+        }
+
+        .researcher {
+            color: #4f6073;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+
+        .specialization {
+            color: #46617c;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .bio {
+            max-width: 980px;
+            color: #444444;
+            font-size: 18px;
+            line-height: 1.75;
+        }
+
+        .bio p + p {
+            margin-top: 22px;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(8, minmax(0, 1fr));
+            gap: 10px;
+            width: 100%;
+            padding: 22px 34px;
+            background: #f7f9fc;
+            border-top: 1px solid #dce3eb;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 0;
+            padding: 12px 8px;
+            border-radius: 8px;
+            background: #0a66c2;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            white-space: nowrap;
+            font-size: 14px;
+            font-weight: 600;
+            transition:
+                background 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .links a:hover {
+            background: #084f98;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(10, 102, 194, 0.2);
+        }
+
+        .links a:focus-visible {
+            outline: 3px solid rgba(10, 102, 194, 0.3);
+            outline-offset: 3px;
+        }
+
+        footer {
+            padding: 18px;
+            border-top: 1px solid #edf0f4;
+            color: #777777;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @media (max-width: 1250px) {
+            .container {
+                width: calc(100% - 40px);
+                margin: 20px auto;
+            }
+
+            .hero {
+                grid-template-columns: 280px minmax(0, 1fr);
+                gap: 40px;
+                padding: 38px 42px;
+            }
+
+            .profile img {
+                max-width: 270px;
+                height: 340px;
+            }
+
+            .links {
+                gap: 8px;
+                padding: 20px;
+            }
+
+            .links a {
+                padding: 11px 6px;
+                font-size: 12.5px;
+            }
+        }
+
+        @media (max-width: 950px) {
+            .container {
+                width: calc(100% - 24px);
+                margin: 12px auto;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 28px;
+                padding: 30px 24px;
+                text-align: center;
+            }
+
+            .profile img {
+                width: 220px;
+                height: 280px;
+            }
+
+            .title-panel {
+                margin-left: auto;
+                margin-right: auto;
+                border-left: none;
+                border-top: 4px solid #0a66c2;
+                border-radius: 10px;
+            }
+
+            .bio {
+                text-align: left;
+            }
+
+            .links {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .links a {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .info h1 {
+                font-size: 36px;
+            }
+
+            .role {
+                font-size: 22px;
+            }
+
+            .researcher {
+                font-size: 18px;
+            }
+
+            .specialization,
+            .bio {
+                font-size: 16px;
+            }
+
+            .links {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                padding: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="container">
+    <main class="container">
 
-<div class="hero">
+        <section class="hero">
 
-<div class="profile">
+            <div class="profile">
+                <img
+                    src="profile1.jpg"
+                    alt="Professional portrait of Durga Prasad Patsa"
+                >
+            </div>
 
-<img src="profile1.jpg" alt="Durga Prasad Patsa">
+            <div class="info">
 
-</div>
+                <h1>Durga Prasad Patsa</h1>
 
-<div class="info">
+                <div class="title-panel">
 
-<h1>Durga Prasad Patsa</h1>
+                    <div class="role">
+                        Enterprise Data Architect
+                    </div>
 
-<div class="role">
+                    <div class="researcher">
+                        Independent Researcher
+                    </div>
 
-Enterprise Data Architect
+                    <div class="specialization">
+                        Artificial Intelligence • Machine Learning • Enterprise Data Engineering
+                    </div>
 
-</div>
+                </div>
 
-<div class="research">
+                <div class="bio">
 
-Independent Researcher
+                    <p>
+                        I am an Enterprise Data Architect with more than
+                        18 years of experience designing enterprise-scale
+                        data platforms, cloud analytics solutions, and modern
+                        data architectures. My expertise includes Microsoft
+                        Azure, Microsoft Fabric, SQL Server, Azure Data Factory,
+                        Databricks, and enterprise data engineering.
+                    </p>
 
-<br>
+                    <p>
+                        This website serves as my professional portfolio and
+                        research hub, where I share research publications,
+                        technical articles, software projects, presentations,
+                        videos, and practical insights into Artificial
+                        Intelligence, Machine Learning, Cloud Computing, and
+                        Enterprise Data Engineering.
+                    </p>
 
-Artificial Intelligence • Machine Learning • Enterprise Data Engineering
+                </div>
 
-</div>
+            </div>
 
-<div class="bio">
+        </section>
 
-<p>
+        <nav class="links" aria-label="Professional links">
 
-I am an Enterprise Data Architect with more than 18 years of experience designing enterprise-scale data platforms, cloud analytics solutions, and modern data architectures. My expertise includes Microsoft Azure, Microsoft Fabric, SQL Server, Azure Data Factory, Databricks, and enterprise data engineering.
+            <a href="publications.html">
+                📄&nbsp; Research Papers
+            </a>
 
-</p>
+            <a href="articles.html">
+                ✍️&nbsp; Articles
+            </a>
 
-<p>
+            <a
+                href="https://github.com/durgaprasadpatsa"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                💻&nbsp; GitHub
+            </a>
 
-This website serves as my professional portfolio and research hub, where I share research publications, technical articles, software projects, presentations, videos, and practical insights into Artificial Intelligence, Machine Learning, Cloud Computing, and Enterprise Data Engineering.
+            <a href="videos.html">
+                🎥&nbsp; Videos
+            </a>
 
-</p>
+            <a href="presentations.html">
+                🎤&nbsp; Presentations
+            </a>
 
-</div>
+            <a
+                href="https://scholar.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                📚&nbsp; Google Scholar
+            </a>
 
-</div>
+            <a
+                href="https://www.linkedin.com/in/durga-prasad-patsa/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                💼&nbsp; LinkedIn
+            </a>
 
-</div>
+            <a href="resume.pdf">
+                📄&nbsp; CV
+            </a>
 
-<div class="links">
+        </nav>
 
-<a href="publications.html">📄 Research Papers</a>
+        <footer>
+            © 2026 Durga Prasad Patsa
+        </footer>
 
-<a href="articles.html">✍️ Articles</a>
-
-<a href="https://github.com/durgaprasadpatsa" target="_blank">💻 GitHub</a>
-
-<a href="videos.html">🎥 Videos</a>
-
-<a href="presentations.html">🎤 Presentations</a>
-
-<a href="https://scholar.google.com/" target="_blank">📚 Google Scholar</a>
-
-<a href="https://www.linkedin.com/in/durga-prasad-patsa/" target="_blank">💼 LinkedIn</a>
-
-<a href="resume.pdf">📄 CV</a>
-
-</div>
-
-<footer>
-
-© 2026 Durga Prasad Patsa
-
-</footer>
-
-</div>
+    </main>
 
 </body>
 
